@@ -1,157 +1,403 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>About MyPath</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications - MyPath Research Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="pictures/mypath-logo.png"
+            alt="MyPath Logo"
+            class="logo-img"
+          />
+          <span class="logo-text">MyPath</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li>
+            <a href="publications.html" class="nav-link active">Publications</a>
+          </li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="galary.html" class="nav-link">Galary</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <main class="main-content">
+      <div class="container">
+        <div class="page-header">
+          <h1 class="page-title">Publications</h1>
+          <p class="page-subtitle">
+            Explore our latest research contributions to the field of Wheelchair
+            Accessibility and AI
+          </p>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            onclick="filterPublications('all')"
+          >
+            All
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="journal"
+            onclick="filterPublications('journal')"
+          >
+            Journal
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="conference"
+            onclick="filterPublications('conference')"
+          >
+            Conference
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="workshop"
+            onclick="filterPublications('workshop')"
+          >
+            Workshop
+          </button>
+        </div>
 
-							<!-- Header -->
-								<header id="header">
-									<a class="logo"><strong>MyPath:</strong> Access Anywhere, Together</a>
-									
-								</header>
+        <!-- Publications Grid -->
+        <div class="publications-grid">
+          <div class="card publication-card" data-type="workshop">
+            <div class="card-header">
+              <h3 class="card-title">
+                OmniAcc: Personalized Accessibility Assistant Using Generative
+                AI
+              </h3>
+              <p class="authors">
+                S. Karki, E. Han, N. Mahmud, S. Bhunia, J. Femiani, and V.
+                Raychoudhury
+              </p>
+              <div class="publication-meta">
+                <span>📅 AAAI • 2025</span>
+              </div>
+              <p class="conference-name">
+                Workshop on AI for Urban Planning, AAAI 2025’s Workshop, 2025
+              </p>
+              <div class="badges">
+                <span class="badge badge-review">Workshop Paper</span>
+              </div>
+            </div>
+          </div>
 
-							<!-- Banner -->
-								<section>
-									<div class="content">
-										<header>
-											<h1>Publications</h1>
-										</header>
-                                        <div class="table-wrapper">
-                                            <table>
-                                                <thead>
-                                                    <tr>
-                                                        <th>Venue</th>
-                                                        <th>Paper</th>
-                                                        <th>Year</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>EAI MobiQuitous</td>
-                                                        <td><strong>MyPath: Accessible Route Generation using Crowd-sensed Surface Information</strong><br><i>Nguyen, Md Fourkanul Islam, Rochishnu Banerjee, Hanna M. Noyce, Emily M. Olejniczak, Roger O. Smith, Md Osman Gani, Vaskar Raychoudhury</i><br>EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking, and Services (MobiQuitous)</td>
-                                                        <td>2023</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RESNA</td>
-                                                        <td><strong>Accessible Routing Using
-                                                            MyPath: Testing and PAR Feedback on the Data Collection Module</strong><br><i>Olejniczak, E., Noyce, Islam, M. F., Banerjee, R., Raychoudhury, V., Gani, M.O., and Smith, R. O</i><br>RESNA Annual Conference</td>
-                                                        <td>2023</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>IEEE MSN</td>
-                                                        <td><strong>Surface Recognition from Wheelchair-induced Noisy Vibration Data: A Tale of Many Cities</strong><br><i>R Banerjee, MF Islam, S Saha, V Raychoudhury, MO Gani</i><br>2022 18th International Conference on Mobility, Sensing and Networking (MSN)</td>
-                                                        <td>2022</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>IEEE Transactions</td>
-                                                        <td><strong>Automated Surface Classification System using Vibration Patterns-A Case Study with Wheelchairs</strong><br><i>Haoxiang Yu, Vaskar Raychoudhury, Snehanshu Saha, Janick Edinger, Roger O Smith, Md Osman Gani</i><br>IEEE Transactions on Artificial Intelligence</td>
-                                                        <td>2022</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>RESNA</td>
-                                                        <td><strong>MyPath: Accessible Routing for Wheelchair Users</strong><br><i>Shaswati Saha, Lauren Selingo, Emily Olejniczak, Hanna Noyce, Vaskar Raychoudhury, Roger O Smith, Md Osman Gani</i><br>Rehabilitation Engineering and Assistive Technology Society of North America (RESNA)</td>
-                                                        <td>2022</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>COMPSAC</td>
-                                                        <td><strong>A Transfer Learning Approach to Surface Detection for Accessible Routing for Wheelchair Users</strong><br><i>Valeria Mokrenko, Haoxiang Yu, Vaskar Raychoudhury, Janick Edinger, Roger O Smith, Md Osman Gani</i><br>2021 IEEE 45th Annual Computers, Software, and Applications Conference (COMPSAC)</td>
-                                                        <td>2021</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BuildSys</td>
-                                                        <td><strong>Smart surface classification for accessible routing through built environment: A crowd-sourced approach</strong><br><i>Md Osman Gani, Vaskar Raychoudhury, Janick Edinger, Valeria Mokrenko, Zheng Cao, Ce Zhang</i><br>Proceedings of the 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</td>
-                                                        <td>2019</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>PerCom Workshops</td>
-                                                        <td><strong>Wheelshare: Crowd-sensed surface classification for accessible routing</strong><br><i>Janick Edinger, Alexandra Hofmann, Anton Wachner, Christian Becker, Vaskar Raychoudhury, Christian Krupitzer</i><br>2019 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)</td>
-                                                        <td>2019</td>
-                                                    </tr>
-                                                    <tfoot>
-                                                        <tr>
-                                                        </tr>
-                                                    </tfoot>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div> 
-								</section>
-						</div>
-					</div>
+          <div class="card publication-card" data-type="conference">
+            <div class="card-header">
+              <h3 class="card-title">
+                MyPath: Accessible Route Generation using Crowd-sensed Surface
+                Information
+              </h3>
+              <p class="authors">
+                Nguyen, Md Fourkanul Islam, Rochishnu Banerjee, Hanna M. Noyce,
+                Emily M. Olejniczak, Roger O. Smith, Md Osman
+              </p>
+              <div class="publication-meta">
+                <span>📅 EAI MobiQuitous • 2023</span>
+              </div>
+              <p class="conference-name">
+                EAI International Conference on Mobile and Ubiquitous Systems:
+                Computing, Networking, and Services (MobiQuitous)
+              </p>
+              <div class="badges">
+                <span class="badge badge-conference">Conference Paper</span>
+              </div>
+            </div>
 
-				<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
+            <div class="publication-actions">
+              <a
+                href="https://link.springer.com/chapter/10.1007/978-3-031-63992-0_3"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
 
+          <div class="card publication-card" data-type="conference">
+            <div class="card-header">
+              <h3 class="card-title">
+                Accessible Routing Using MyPath: Testing and PAR Feedback on the
+                Data Collection Module Information
+              </h3>
+              <p class="authors">
+                Olejniczak, E., Noyce, Islam, M. F., Banerjee, R., Raychoudhury,
+                V., Gani, M.O., and Smith, R. O
+              </p>
+              <div class="publication-meta">
+                <span>📅 RESNA • 2023</span>
+              </div>
+              <p class="conference-name">RESNA Annual Conference</p>
+              <div class="badges">
+                <span class="badge badge-conference">Conference Paper</span>
+              </div>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://www.resna.org/sites/default/files/conference/2023/PublicTransportation/91_Olejniczak/91_Olejniczak.pdf"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
 
-						<!-- Menu -->
-                        <nav id="menu">
-                            <header class="major">
-                                <h2>Menu</h2>
-                            </header>
-                            <ul>
-                                <li><a href="index.html">Homepage</a></li>
-                                <li><a href="about.html">Our Vision</a></li>
-                                <li><a href="details.html">More about MyPath</a></li>
-                                <li><a href="signup.html">Sign up</a></li>
-                                <li><a href="team.html">Meet the Team</a></li>
-                                <li><a href="publications.html">Publications</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="collab.html">Collaborators</a></li>
-                                <li>
-                                    <span class="opener">Download the App</span>
-                                    <ul>
-                                        <li><a href="https://drive.google.com/file/d/1xEj4udqXTOIdNP2VVLw5Seh6VQu7F01y/view?usp=sharing">Android</a></li>
-                                        <li><a href="https://testflight.apple.com/join/f0qJoz6z">iOS</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
+          <div class="card publication-card" data-type="conference">
+            <div class="card-header">
+              <h3 class="card-title">
+                Surface Recognition from Wheelchair-induced Noisy Vibration
+                Data: A Tale of Many Cities
+              </h3>
+              <p class="authors">
+                R Banerjee, MF Islam, S Saha, V Raychoudhury, MO Gani
+              </p>
+              <div class="publication-meta">
+                <span>📅 IEEE MSN • 2022</span>
+              </div>
+              <p class="conference-name">
+                2022 18th International Conference on Mobility, Sensing and
+                Networking (MSN)
+              </p>
+              <div class="badges">
+                <span class="badge badge-conference">Conference Paper</span>
+              </div>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://www.computer.org/csdl/proceedings-article/msn/2022/645700a619/1LUtWSX7qEM"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
 
-						<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Get in touch</h2>
-								</header>
-								<p>If you have any questions, we are happy to help you.</p>
-								<ul class="contact">
-									<li class="icon solid fa-envelope"><a href="#">mypath@miamioh.edu</a></li>
-									<li class="icon solid fa-phone">(513) 529-0845</li>
-								</ul>
-							</section>
+          <div class="card publication-card" data-type="conference">
+            <div class="card-header">
+              <h3 class="card-title">
+                Automated Surface Classification System using Vibration
+                Patterns-A Case Study with Wheelchairs
+              </h3>
+              <p class="authors">
+                Haoxiang Yu, Vaskar Raychoudhury, Snehanshu Saha, Janick
+                Edinger, Roger O Smith, Md Osman Gani
+              </p>
+              <div class="publication-meta">
+                <span>📅 IEEE Transactions • 2022</span>
+              </div>
+              <p class="conference-name">
+                IEEE Transactions on Artificial Intelligence
+              </p>
+              <div class="badges">
+                <span class="badge badge-conference">Conference Paper</span>
+              </div>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://ieeexplore.ieee.org/abstract/document/9829917/?casa_token=AHIBTDdiNUcAAAAA:NPrz9qynTce0lWvMxd6I2OlhhcflePcMvurWHIBHwPHZQvpqkxbhAfQjuvuYwvIgs21aBVTn4A"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
 
-						<!-- Footer -->
-							<footer id="footer">
-								<p class="copyright">&copy; MyPath. All rights reserved.</p>
-							</footer>
+          <div class="card publication-card" data-type="conference">
+            <div class="card-header">
+              <h3 class="card-title">
+                MyPath: Accessible Routing for Wheelchair Users
+              </h3>
+              <p class="authors">
+                Shaswati Saha, Lauren Selingo, Emily Olejniczak, Hanna Noyce,
+                Vaskar Raychoudhury, Roger O Smith, Md Osman Gani
+              </p>
+              <div class="publication-meta">
+                <span>📅 RESNA • 2022</span>
+              </div>
+              <p class="conference-name">
+                Rehabilitation Engineering and Assistive Technology Society of
+                North America (RESNA)
+              </p>
+              <div class="badges">
+                <span class="badge badge-conference">Conference Paper</span>
+              </div>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://www.resna.org/sites/default/files/conference/2022/PublicTransportation/80_Saha/80_Saha.pdf"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
 
-					</div>
-				</div>
+          <div class="card publication-card" data-type="conference">
+            <div class="card-header">
+              <h3 class="card-title">
+                A Transfer Learning Approach to Surface Detection for Accessible
+                Routing for Wheelchair Users
+              </h3>
+              <p class="authors">
+                Valeria Mokrenko, Haoxiang Yu, Vaskar Raychoudhury, Janick
+                Edinger, Roger O Smith, Md Osman Gani
+              </p>
+              <div class="publication-meta">
+                <span>📅 COMPSAC • 2021</span>
+              </div>
+              <p class="conference-name">
+                2021 IEEE 45th Annual Computers, Software, and Applications
+                Conference (COMPSAC)
+              </p>
+              <div class="badges">
+                <span class="badge badge-conference">Conference Paper</span>
+              </div>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://ieeexplore.ieee.org/abstract/document/9529616/?casa_token=fOYpxjCiDSsAAAAA:-hQW458_LZPBHwhVqYeuJUHUiM45Me_IyCfBo8U-XacJdexR4kIi2dTxtigo4-vSuVsgvkph_Q"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
 
-			</div>
+          <div class="card publication-card" data-type="conference">
+            <div class="card-header">
+              <h3 class="card-title">
+                Smart surface classification for accessible routing through
+                built environment: A crowd-sourced approach
+              </h3>
+              <p class="authors">
+                Md Osman Gani, Vaskar Raychoudhury, Janick Edinger, Valeria
+                Mokrenko, Zheng Cao, Ce Zhang
+              </p>
+              <div class="publication-meta">
+                <span>📅 BuildSys • 2019</span>
+              </div>
+              <p class="conference-name">
+                Proceedings of the 6th ACM International Conference on Systems
+                for Energy-Efficient Buildings, Cities, and Transportation
+              </p>
+              <div class="badges">
+                <span class="badge badge-conference">Conference Paper</span>
+              </div>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://dl.acm.org/doi/abs/10.1145/3360322.3360863"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <div class="card publication-card" data-type="workshop">
+            <div class="card-header">
+              <h3 class="card-title">
+                Wheelshare: Crowd-sensed surface classification for accessible
+                routing
+              </h3>
+              <p class="authors">
+                Janick Edinger, Alexandra Hofmann, Anton Wachner, Christian
+                Becker, Vaskar Raychoudhury, Christian Krupitzer
+              </p>
+              <div class="publication-meta">
+                <span>📅 PerCom Workshops • 2019</span>
+              </div>
+              <p class="conference-name">
+                2019 IEEE International Conference on Pervasive Computing and
+                Communications Workshops (PerCom Workshops)
+              </p>
+              <div class="badges">
+                <span class="badge badge-review">Workshop Paper</span>
+              </div>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://ieeexplore.ieee.org/abstract/document/8730849/?casa_token=A8lmkAloAIkAAAAA:06HqHKfYmDBBNzQoqdJC2lKxKalH5ZN1Ly_ykyPEeGXnRf5nS2gBDQjF7tagyPfA7I2PW4zeoQ"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-	</body>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3 class="footer-title">MyPath</h3>
+            <p>
+              Advancing wheelchair accessibility through innovative AI research
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="conferences.html">Conferences</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div>
+              <p>mypath@miamioh.edu</p>
+              <p>+1 (513) 529-0845</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 MyPath. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

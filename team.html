@@ -1,164 +1,523 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>MyPath Team</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team - MyPath Research Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="pictures/mypath-logo.png"
+            alt="MyPath Logo"
+            class="logo-img"
+          />
+          <span class="logo-text">MyPath</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="team.html" class="nav-link active">Team</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="galary.html" class="nav-link">Galary</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <main class="main-content">
+      <div class="container">
+        <div class="page-header">
+          <h1 class="page-title">Our Research Team</h1>
+          <p class="page-subtitle">
+            Meet the brilliant minds driving innovation in artificial
+            intelligence research
+          </p>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        <!-- Project Instructors Section -->
+        <section class="team-section">
+          <h2 class="section-title">Project Instructors</h2>
+          <div class="team-grid">
+            <div class="card team-card">
+              <div class="team-image">
+                <img
+                  src="./pictures/raychoudhury-vaskar.jpeg"
+                  alt="Dr. Vaskar Raychoudhury"
+                />
+              </div>
+              <div class="team-info">
+                <h3>Vaskar Raychoudhury, PhD</h3>
+                <span class="badge badge-published"
+                  >Principal Investigator</span
+                >
+                <p class="specialization">Applied Machine Learning</p>
+                <p class="education">
+                  PhD in Computer Science, The Hong Kong Polytechnic University
+                </p>
+                <p class="bio">
+                  Dr. Raychoudhury leads our ML research with over 10 years of
+                  experience in machine learning.
+                </p>
+                <p class="publications">90+ publications</p>
+              </div>
+            </div>
 
-							<!-- Header -->
-								<header id="header">
-									<a class="logo"><strong>MyPath:</strong> Access Anywhere, Together</a>
-								</header>
+            <div class="card team-card">
+              <div class="team-image">
+                <img src="./pictures/gani.png" alt="Md Osman Gani, PhD" />
+              </div>
+              <div class="team-info">
+                <h3>Md Osman Gani, PhD</h3>
+                <span class="badge badge-accepted"
+                  >Co-Principal Investigator</span
+                >
+                <p class="specialization">Computer Vision</p>
+                <p class="education">
+                  PhD in Computer Science, Marquette University, Milwaukee, WI
+                </p>
+                <p class="bio">
+                  Dr. Gani specializes in causal inference and computer vision,
+                  applying these methods to healthcare outcomes and accessible
+                  routing for wheelchair users.
+                </p>
+                <p class="publications">35+ publications</p>
+              </div>
+            </div>
 
-								<section>
-                                    <h1>Project Instructors</h1>
-                                    
-                                        <p><span class="image left"><img src="images/vaskar.png" alt="" /></span>
-                                            <heading>Vaskar Raychoudhury, PhD</heading><br>
-                                            <subtext><i>Department of CSE, Miami University</i></subtext><br>
-                                            [vaskar bio here]<br><br></p>
+            <div class="card team-card">
+              <div class="team-image">
+                <img src="./pictures/smith.jpg" alt="Roger O. Smith, PhD" />
+              </div>
+              <div class="team-info">
+                <h3>Roger O. Smith, PhD, ROATA, RESNA Fellow</h3>
+                <span class="badge badge-accepted"
+                  >Co-Principal Investigator</span
+                >
+                <p class="specialization">accessibility & Rehabilation</p>
+                <p class="education">
+                  Professor Emeritus, Programs in Occupational Therapy, Science
+                  & Technology, R2D2, University of Wisconsin Milwaukee
+                </p>
+                <p class="bio">
+                  Roger O. Smith researches disability measurement, assistive
+                  technology, and universal design at the University of
+                  Wisconsin–Milwaukee.
+                </p>
+                <p class="publications">50+ publications</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                                        <p><span class="image left"><img src="images/gani.png" alt="" /></span>
-                                            <heading>Md Osman Gani, PhD</heading><br>
-                                            <subtext><i>Department of CSIS, University of Maryland Baltimore County</i></subtext><br>
-                                            [gani bio here].</p>
+        <!-- Team Members Section -->
+        <section class="team-section">
+          <h2 class="section-title">Team Members</h2>
+          <div class="team-grid">
+            <div class="card team-card">
+              <div class="team-image">
+                <img src="./pictures/mobarak.jpeg" alt="Asm Mobarak Hossain" />
+              </div>
+              <div class="team-info">
+                <h3>Asm Mobarak Hossain</h3>
+                <span class="badge badge-journal">Research Assistant</span>
+                <p class="specialization">
+                  Software Engeering, Machine Learning
+                </p>
+                <p class="education">MS, Information Systems, UMBC</p>
+                <p class="bio">
+                  Worked as CTO of ShareTrip.com for 5+ years and has 10+ years
+                  of experience as a software engineer. Now focusing on AI and
+                  accessibility research at UMBC.
+                </p>
+              </div>
+            </div>
 
-                                        <p><span class="image left"><img src="images/smith.png" alt="" /></span>
-                                            <heading>Roger O. Smith, PhD, ROATA, RESNA Fellow</heading><br>
-                                            <subtext><i>R2D2, University of Wisconsin Milwaukee</i></subtext><br>
-                                            [smith bio here].</p>
+            <div class="card team-card">
+              <div class="team-image">
+                <img src="./pictures/nadim.jpeg" alt="Nadim Mahmud" />
+              </div>
+              <div class="team-info">
+                <h3>Nadim Mahmud</h3>
+                <span class="badge badge-journal">Graduate Assistant</span>
+                <p class="specialization">
+                  AI, Machine Learning, Software Engeering
+                </p>
+                <p class="education">
+                  MS in Computer Science, Miami University
+                </p>
+                <p class="bio">
+                  Computer science researcher with expertise in AI, remote
+                  sensing, and intelligent mobility systems for accessibility.
+                </p>
+              </div>
+            </div>
 
-                                </section>
+            <div class="card team-card">
+              <div class="team-image">
+                <img src="./pictures/ethan.jpg" alt="Ethan Han" />
+              </div>
+              <div class="team-info">
+                <h3>Ethan Han</h3>
+                <span class="badge badge-journal">Research Assistant</span>
+                <p class="specialization">
+                  Image Processing, Remotesensing, ML, AI
+                </p>
+                <p class="education">
+                  MS in Computer Science, Miami University
+                </p>
+                <p class="bio">
+                  Computer science researcher with expertise in image
+                  processing, remote sensing, and AI for accessibility.
+                </p>
+              </div>
+            </div>
 
-                                <section>
-                                    <header>
-                                        <h6>Student Members</h6>
-                                    </header>
-                                    <div class="row">
-                                            <div class="col-6 col-12-small">
-                                                <p><span class="image left"><img src="images/rochi.jpg" alt="" /></span>
-                                                    <strong>Rochishnu Banerjee</strong><br>
-                                                    <i>MS, Miami University</i><br>
-                                                    [rochi bio here].</p>
-                                            </div>
-                                            <div class="col-6 col-12-small">
-                                                <p><span class="image left"><img src="images/fourkan.jpeg" alt="" /></span>
-                                                    <strong>Md Fourkanul Islam</strong><br>
-                                                    <i>MS, UM Baltimore County</i><br>
-                                                    [fourkan bio here].</p>
-                                            </div>
-                                            <!-- Break -->
-                                            <div class="col-6 col-12-small">
-                                                    <p><span class="image left"><img src="images/hanna.jpg" alt="" /></span>
-                                                        <strong>Hanna Noyce</strong><br>
-                                                        <i>MS, UW Milwaukee</i><br>
-                                                        [hanna bio here].</p>
-                                                </div>
-                                                <div class="col-6 col-12-small">
-                                                        <p><span class="image left"><img src="images/kaitlin.png" alt="" /></span>
-                                                            <strong>Kaitlin Schultz</strong><br>
-                                                            <i>UG, UW Milwaukee</i><br>
-                                                            [kaitlin bio here].</p>
-                                                </div>
-                                        </div>
-                                </section>
-                                
-                                
-                                <section>
-                                    <h6>Other Members</h6>
-									<div class="content">
-										<ul class="c">
-                                            <li><strong>Thomas Nguyen</strong>, MU</li>
-                                            <li><strong>Patrick Duimstra</strong>, MU</li>
-                                            <li><strong>Kian Metcalfe</strong>, MU</li>
-                                            <li><strong>Huy Nguyen</strong>, MU</li>
-                                            <li><strong>Emily Olejniczak</strong>, UWM</li>
-                                        </ul>
-                                    </div>
+            <div class="card team-card">
+              <div class="team-image">
+                <img src="./pictures/neil.jpg" alt="Neil Advani" />
+              </div>
+              <div class="team-info">
+                <h3>Neil Advani</h3>
+                <span class="badge badge-journal"> AI Researcher</span>
+                <p class="specialization">Artificial Interlligence</p>
+                <p class="education">
+                  MS in Information Science, University of Maryland, Baltimore
+                  County
+                </p>
+                <p class="bio">
+                  AI researcher focused on applying deep learning and data
+                  science to solve real-world challenges in urban accessibility,
+                  healthcare, and data integrity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                                    <div class="box alt">
-                                        <div class="row gtr-50 gtr-uniform">
-                                            <div class="col-4"><span class="image fit"><img src="images/mu.png" alt="" /></span></div>
-                                            <div class="col-4"><span class="image fit"><img src="images/umbc.png" alt="" /></span></div>
-                                            <div class="col-4"><span class="image fit"><img src="images/uwm.png" alt="" /></span></div>
-                                        </div>
-                                    </div>
-                                </section>
-						</div>
-					</div>
+        <!-- Previous Team Members Section -->
+        <section class="team-section">
+          <h2 class="section-title">Previous Team Members</h2>
+          <div class="previous-members-grid">
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Rochishnu Banerjee</h3>
+                  <p class="previous-member-education">
+                    MS in Computer Science, Miami University
+                  </p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-				<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Md Fourkanul Islam</h3>
+                  <p class="previous-member-education">
+                    MS, University of Maryland Baltimore County
+                  </p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
 
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Thomas Nguyen</h3>
+                  <p class="previous-member-education">Miami University</p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-						<!-- Menu -->
-                        <nav id="menu">
-                            <header class="major">
-                                <h2>Menu</h2>
-                            </header>
-                            <ul>
-                                <li><a href="index.html">Homepage</a></li>
-                                <li><a href="about.html">Our Vision</a></li>
-                                <li><a href="details.html">More about MyPath</a></li>
-                                <li><a href="signup.html">Sign up</a></li>
-                                <li><a href="team.html">Meet the Team</a></li>
-                                <li><a href="publications.html">Publications</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="collab.html">Collaborators</a></li>
-                                <li>
-                                    <span class="opener">Download the App</span>
-                                    <ul>
-                                        <li><a href="https://drive.google.com/file/d/1xEj4udqXTOIdNP2VVLw5Seh6VQu7F01y/view?usp=sharing">Android</a></li>
-                                        <li><a href="https://testflight.apple.com/join/f0qJoz6z">iOS</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Patrick Duimstra</h3>
+                  <p class="previous-member-education">Miami University</p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-						<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Get in touch</h2>
-								</header>
-								<p>If you have any questions, we are happy to help you.</p>
-								<ul class="contact">
-									<li class="icon solid fa-envelope"><a href="#">mypath@miamioh.edu</a></li>
-									<li class="icon solid fa-phone">(513) 529-0845</li>
-								</ul>
-							</section>
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Kian Metcalfe</h3>
+                  <p class="previous-member-education">Miami University</p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-						<!-- Footer -->
-							<footer id="footer">
-								<p class="copyright">&copy; MyPath. All rights reserved.</p>
-							</footer>
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Huy Nguyen</h3>
+                  <p class="previous-member-education">Miami University</p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-					</div>
-				</div>
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Nam Hoang</h3>
+                  <p class="previous-member-education">Miami University</p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-			</div>
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Huy Tran Quang</h3>
+                  <p class="previous-member-education">Miami University</p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <div class="previous-member-card">
+              <div class="previous-member-info">
+                <div class="previous-member-details">
+                  <h3 class="previous-member-name">Emily Olejniczak</h3>
+                  <p class="previous-member-education">
+                    University of Wisconsin-Milwaukee
+                  </p>
+                </div>
+                <div class="previous-member-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                      fill="#64748b"
+                    />
+                    <path
+                      d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z"
+                      fill="#64748b"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-	</body>
+        <!-- Team Stats -->
+        <div class="card team-stats">
+          <h2 class="section-title">Team Statistics</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Team Members</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Research Areas</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Total Publications</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">7+</div>
+              <div class="stat-label">Years Combined Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3 class="footer-title">MyPath</h3>
+            <p>
+              Advancing wheelchair accessibility through innovative AI research
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="conferences.html">Conferences</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div>
+              <p>mypath@miamioh.edu</p>
+              <p>+1 (513) 529-0845</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 MyPath. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

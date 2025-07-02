@@ -1,121 +1,230 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>About MyPath</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - MyPath Research Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="pictures/mypath-logo.png"
+            alt="MyPath Logo"
+            class="logo-img"
+          />
+          <span class="logo-text">MyPath</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="galary.html" class="nav-link">Galary</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <main class="main-content">
+      <div class="container">
+        <div class="page-header">
+          <h1 class="page-title">About MyPath Research</h1>
+          <p class="page-subtitle">Empowering Inclusive Mobility Through AI</p>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        <div class="about-content">
+          <div class="card">
+            <h2>Our Mission</h2>
+            <p>
+              MyPath is an AI-powered accessibility project focused on
+              transforming urban navigation for wheelchair users. We pioneer
+              inclusive routing solutions by combining real-world data, user
+              feedback, and ethical machine learning practices. Our mission is
+              to create technology that empowers independence, enhances safety,
+              and addresses the daily mobility challenges faced by people with
+              disabilities.
+            </p>
+          </div>
 
-							<!-- Header -->
-								<header id="header">
-									<a class="logo"><strong>MyPath:</strong> Access Anywhere, Together</a>
-								</header>
+          <div class="card">
+            <h2>Research Focus Areas</h2>
+            <div class="focus-areas">
+              <div class="focus-area">
+                <h3>🧠 Accessible Language Models</h3>
+                <p>
+                  Developing and fine-tuning LLMs to interpret user queries,
+                  extract accessibility details from text, and generate
+                  personalized, step-by-step navigation instructions.
+                </p>
+              </div>
+              <div class="focus-area">
+                <h3>♿ Wheelchair Accessibility</h3>
+                <p>
+                  Identifying, mapping, and prioritizing infrastructure elements
+                  such as curb cuts, ramps, surface types, and elevator access
+                  to ensure safe, smooth, and dignified mobility for wheelchair
+                  users in diverse environments.
+                </p>
+              </div>
+              <div class="focus-area">
+                <h3>🗺️ Geo-Spatial Data Fusion</h3>
+                <p>
+                  Integrating diverse data sources including OpenStreetMap,
+                  crowdsourced reviews, and satellite imagery to create a rich,
+                  real-time understanding of urban accessibility conditions.
+                </p>
+              </div>
+              <div class="focus-area">
+                <h3>🧭 Barrier-Aware Routing</h3>
+                <p>
+                  Designing intelligent pathfinding algorithms that adapt to
+                  real-world constraints like curb ramps, steep slopes, and
+                  inaccessible surfaces—ensuring safer, more inclusive routes
+                  for wheelchair users.
+                </p>
+              </div>
+              <div class="focus-area">
+                <h3>🤝 Human-Centered AI Design</h3>
+                <p>
+                  Building tools that prioritize usability and trust, based on
+                  participatory design with people with disabilities—ensuring AI
+                  solutions meet real-world needs.
+                </p>
+              </div>
+              <div class="focus-area">
+                <h3>🚶 Mobility Behavior Understanding</h3>
+                <p>
+                  Analyzing movement patterns, terrain preferences, and
+                  interaction feedback to better personalize routes and adapt to
+                  individual mobility constraints.
+                </p>
+              </div>
+            </div>
+          </div>
 
-							<!-- Banner -->
-								<section>
-									<div class="content">
-										<header>
-											<h1>Our Vision</h1>
-										</header>
-                                        <p>MyPath's vision is to provide users with customized paths between destinations. The paths are ideally customized by taking the user's personal information into account. This allows the route provided to avoid certain barriers (i.e. fallen trees for users that may not be able to go over or around them), include specific facilities (i.e. curb cuts for wheelchair users), and avoid unsafe conditions (i.e. terrain that may be difficult for some users to physically navigate). MyPath hopes to crowdsource information to allow for a better algorithm and more real-time updates, allowing users more independence than they may have had in the past.</p>
-                                        <div style="width: 70%;">
-                                            <span class="image fit"><img src="images/motivation.png" alt="Motivation behind the MyPath venture"/></span>
-                                        </div>
-                                            
-                                        
-                                    </div>
-                                    
-								</section>
+          <div class="card">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+              <div class="value-item">
+                <h3>🔬 Scientific Rigor</h3>
+                <p>
+                  We maintain the highest standards of scientific methodology in
+                  all our research endeavors.
+                </p>
+              </div>
+              <div class="value-item">
+                <h3>🤝 Collaboration</h3>
+                <p>
+                  We believe in the power of interdisciplinary collaboration and
+                  open knowledge sharing.
+                </p>
+              </div>
+              <div class="value-item">
+                <h3>🌟 Innovation</h3>
+                <p>
+                  We continuously push the boundaries of what's possible in
+                  artificial intelligence.
+                </p>
+              </div>
+              <div class="value-item">
+                <h3>⚖️ Ethics</h3>
+                <p>
+                  We are committed to developing AI that is fair, transparent,
+                  and beneficial to society.
+                </p>
+              </div>
+            </div>
+          </div>
 
-								<section>
-									<div class="content">
-										<header>
-											<h1>The Bigger Picture</h1>
-										</header>
-										<p>We introduce the MyPath accessible routing system for wheelchair users which works by crowd-sourced surface vibration data collected by wheelchair users in an unobtrusive manner through the MyPath app. Our MyPath app is an accessible app by itself and is thoroughly verified by a team of wheelchair users, blind and low vision (BLV) users, and rehabilitation and mobility experts. The app has both Android and iOS versions and is tested for many hours for correct functioning. The MyPath system consists of three interconnected modules - <strong>data collection, ML-based surface classification, and accessible route generation</strong>.</p>
+          <div class="card">
+            <h2>Partnerships & Collaborations</h2>
+            <p>
+              MyPath fosters strong collaborations with academic institutions
+              and accessibility advocates to drive inclusive AI innovation.
+              These partnerships enable us to co-develop technologies, share
+              expertise, and create real-world impact for people with mobility
+              challenges.
+            </p>
+            <div class="partnership-logos">
+              <div class="partner">Miami University (Ohio)</div>
+              <div class="partner">
+                University of Maryland, Baltimore County (UMBC)
+              </div>
+              <div class="partner">University of Wisconsin</div>
+            </div>
+          </div>
 
-                                        <div style="width: 60%;">
-                                            <span class="image fit"><img src="images/mypath-sysarch.png" alt="Functional workflow of MyPath sytem"></span>
-                                        </div>
-										
+          <div class="card">
+            <h2>Contact Information</h2>
+            <div class="contact-grid">
+              <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p>mypath@miamioh.edu</p>
+              </div>
+              <div class="contact-item">
+                <h3>📞 Phone</h3>
+                <p>+1 (513) 529-0845</p>
+              </div>
+              <div class="contact-item">
+                <h3>📍 Address</h3>
+                <p>
+                  McVey Data Science Building 364, Miami University
+                  <br />Oxford, OH 45056 <br />United States
+                </p>
+              </div>
+              <div class="contact-item">
+                <h3>🕒 Office Hours</h3>
+                <p>Monday - Friday<br />9:00 AM - 5:00 PM PST</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-										<p>Functionally, the operations of the system are divided into a <strong>training phase</strong> and a <strong>live phase</strong>. In the training phase, experiments are conducted both indoors and outdoors for curbs, flat paths, and other common surface types. The surface type and slope data are used for classification model training. The live phase consists of an unobtrusive, participatory crowd-sensing technique to collect location-tagged path information from urban areas in order to identify accessible features and recommend personalized routes in the built environment. In the training phase, a registered wheelchair user can contribute to data collection (step 0 and step 1) using a smartphone (Android or iOS) embedded with motion sensors. Collected data is subject to a surface classification operation in the central server using machine learning (step 2). Once data is accumulated from the user’s surroundings, the graphical overlay map is constructed with important path features (step 3) which helps to generate accessible routes (step 4) based on user-initiated queries (step 5). The accessible route query and response for the user can take place during the testing phase with enough data to populate the server. </p>
-                                    </div>
-                                </section>
-						</div>
-					</div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3 class="footer-title">MyPath</h3>
+            <p>
+              Advancing wheelchair accessibility through innovative AI research
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="conferences.html">Conferences</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div>
+              <p>mypath@miamioh.edu</p>
+              <p>+1 (513) 529-0845</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 MyPath. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
-				<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
-
-
-						<!-- Menu -->
-                        <nav id="menu">
-                            <header class="major">
-                                <h2>Menu</h2>
-                            </header>
-                            <ul>
-                                <li><a href="index.html">Homepage</a></li>
-                                <li><a href="about.html">Our Vision</a></li>
-                                <li><a href="details.html">More about MyPath</a></li>
-                                <li><a href="signup.html">Sign up</a></li>
-                                <li><a href="team.html">Meet the Team</a></li>
-                                <li><a href="publications.html">Publications</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="collab.html">Collaborators</a></li>
-                                <li>
-                                    <span class="opener">Download the App</span>
-                                    <ul>
-                                        <li><a href="https://drive.google.com/file/d/1xEj4udqXTOIdNP2VVLw5Seh6VQu7F01y/view?usp=sharing">Android</a></li>
-                                        <li><a href="https://testflight.apple.com/join/f0qJoz6z">iOS</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-
-						<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Get in touch</h2>
-								</header>
-								<p>If you have any questions, we are happy to help you.</p>
-								<ul class="contact">
-									<li class="icon solid fa-envelope"><a href="#">mypath@miamioh.edu</a></li>
-									<li class="icon solid fa-phone">(513) 529-0845</li>
-								</ul>
-							</section>
-
-						<!-- Footer -->
-							<footer id="footer">
-								<p class="copyright">&copy; MyPath. All rights reserved.</p>
-							</footer>
-
-					</div>
-				</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="script.js"></script>
+  </body>
 </html>

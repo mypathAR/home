@@ -1,129 +1,450 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>MyPath</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPath Research Lab</title>
+    <meta
+      name="description"
+      content="AI Research Lab - Advancing artificial intelligence through innovative research"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="pictures/mypath-logo.png"
+            alt="MyPath Logo"
+            class="logo-img"
+          />
+          <span class="logo-text">MyPath</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="galary.html" class="nav-link">Galary</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container">
+          <h1 class="hero-title">Access Anywhere, Together</h1>
+          <p class="hero-subtitle">
+            MyPath is an AI-powered accessible navigation system that provides
+            personalized, barrier-aware routes for wheelchair users using
+            geospatial data fusion and language models.
+          </p>
+          <div class="hero-buttons">
+            <a href="#app-tutorial" class="btn btn-primary"
+              >Watch App Tutorial</a
+            >
+            <a href="#signup-study" class="btn btn-secondary"
+              >Signup for Study</a
+            >
+          </div>
+        </div>
+      </section>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+      <!-- Research Description Section -->
+      <section class="features">
+        <div class="container">
+          <!-- <h2 class="section-title">Our Research</h2> -->
+          <div class="research-description">
+            <!-- <p class="research-intro">
+              Our research focuses on developing cutting-edge artificial
+              intelligence solutions to improve accessibility and navigation for
+              wheelchair users. We combine advanced machine learning techniques
+              with real-world geospatial data to create personalized,
+              barrier-aware routing systems.
+            </p>
+            <p class="research-details">
+              The MyPath project leverages natural language processing, computer
+              vision, and geospatial analysis to understand and predict
+              accessibility challenges in urban environments. Our
+              interdisciplinary approach brings together experts in AI,
+              accessibility research, urban planning, and human-computer
+              interaction to create solutions that truly make a difference in
+              people's lives.
+            </p>
+            <p class="research-impact">
+              Through our research, we aim to eliminate navigation barriers and
+              create more inclusive urban spaces. Our work has implications
+              beyond wheelchair accessibility, extending to all
+              mobility-impaired individuals and contributing to the broader
+              field of accessible technology design.
+            </p> -->
 
-							<!-- Header -->
-								<header id="header">
-									<a class="logo"><strong>MyPath:</strong> Access Anywhere, Together</a>
-								</header>
+            <h2 class="section-title">Our Vision</h2>
+            <div class="research-details">
+              <p>
+                MyPath's vision is to provide users with customized paths
+                between destinations. The paths are ideally customized by taking
+                the user's personal information into account. This allows the
+                route provided to avoid certain barriers (i.e. fallen trees for
+                users that may not be able to go over or around them), include
+                specific facilities (i.e. curb cuts for wheelchair users), and
+                avoid unsafe conditions (i.e. terrain that may be difficult for
+                some users to physically navigate). MyPath hopes to crowdsource
+                information to allow for a better algorithm and more real-time
+                updates, allowing users more independence than they may have had
+                in the past.
+              </p>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>MyPath</h1>
-											<p>Identifying Surface Characteristics for Generating Personalized Accessible Routes for Wheelchair Users through Participatory Sensing</p>
-										</header>
-										<p><strong>Welcome to the MyPath project.</strong><br> We aim to build an accessible routing and navigation system for wheelchair users to get to their destination from any source location. We achieve this by identifying surface types from user-collected vibrational patterns and subsequently use the surface type and incline information to generate end-to-end personalized accessible routes.</p>
-										<ul class="actions">
-											<li><a href="about.html" class="button big">Our Vision</a></li>
-											<li><a href="details.html" class="button big">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image fit">
-										<img src="images/mypath-logo.png" alt="MyPath Logo" />
-									</span>
-								</section>
+              <img
+                src="pictures/motivation.png"
+                alt="Research Motivation"
+                class="rounded-corner"
+                style="max-width: 100%; margin: 2rem 0"
+              />
+            </div>
+            <h2 class="section-title">The Bigger Picture</h2>
+            <div class="research-details">
+              <p>
+                We introduce the MyPath accessible routing system for wheelchair
+                users which works by crowd-sourced surface vibration data
+                collected by wheelchair users in an unobtrusive manner through
+                the MyPath app. Our MyPath app is an accessible app by itself
+                and is thoroughly verified by a team of wheelchair users, blind
+                and low vision (BLV) users, and rehabilitation and mobility
+                experts. The app has both Android and iOS versions and is tested
+                for many hours for correct functioning. The MyPath system
+                consists of three interconnected modules - data collection,
+                ML-based surface classification, and accessible route
+                generation.
+              </p>
+              <img
+                src="pictures/mypath-sysarch.png"
+                alt="Research Motivation"
+                class="rounded-corner"
+                style="max-width: 100%; margin: 2rem 0"
+              />
+              <p>
+                Functionally, the operations of the system are divided into a
+                training phase and a live phase. In the training phase,
+                experiments are conducted both indoors and outdoors for curbs,
+                flat paths, and other common surface types. The surface type and
+                slope data are used for classification model training. The live
+                phase consists of an unobtrusive, participatory crowd-sensing
+                technique to collect location-tagged path information from urban
+                areas in order to identify accessible features and recommend
+                personalized routes in the built environment. In the training
+                phase, a registered wheelchair user can contribute to data
+                collection (step 0 and step 1) using a smartphone (Android or
+                iOS) embedded with motion sensors. Collected data is subject to
+                a surface classification operation in the central server using
+                machine learning (step 2). Once data is accumulated from the
+                user’s surroundings, the graphical overlay map is constructed
+                with important path features (step 3) which helps to generate
+                accessible routes (step 4) based on user-initiated queries (step
+                5). The accessible route query and response for the user can
+                take place during the testing phase with enough data to populate
+                the server.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Sign up for our Study!</h1>
-										</header>
-                                        <ul class="c">
-                                            <li>Are you an adult wheelchair user who carries a smartphone?</li>
-                                            <li>Are you tired of spending too much time in route planning before every outing?</li>
-                                            <li>Are you interested in finding the best route for your mobility needs and preferences?</li>
-                                        </ul>
-										<p>Scan the QR code or click the link below to access our Partitipation Interest Form.</p>
-										<ul class="actions">
-											<li><a href="https://miamioh.qualtrics.com/jfe/form/SV_25oZUcwN96N2RPo" class="button big">Link to Form</a></li>
-                                            <li><a href="signup.html" class="button big">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/qr.png" alt="QR code to Participation Interest Form" />
-									</span>
-								</section>
-						</div>
-					</div>
+      <!-- Mobile App Tutorial Section -->
+      <section class="app-tutorial" id="app-tutorial">
+        <div class="container">
+          <h2 class="section-title">MyPath Mobile App Tutorial</h2>
+          <div class="tutorial-content">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="MyPath Mobile App Tutorial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="tutorial-description">
+              <h3>Learn How to Use MyPath</h3>
+              <p>
+                Watch this comprehensive tutorial to learn how to use the MyPath
+                mobile application effectively. Discover all the features,
+                navigation options, and accessibility tools that make your
+                journey easier.
+              </p>
+              <ul class="tutorial-features">
+                <li>Finding barrier-aware routes</li>
+                <li>Setting up your accessibility preferences</li>
+                <li>Reporting accessibility issues</li>
+              </ul>
+            </div>
+          </div>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+          <!-- Video Grid Section -->
+          <div class="video-grid-section">
+            <h3 class="video-grid-title">Tutorial Videos</h3>
+            <div class="video-grid">
+              <div class="video-grid-item">
+                <div class="video-thumbnail">
+                  <iframe
+                    width="300"
+                    height="200"
+                    src="https://www.youtube.com/embed/NAVIGATION_VIDEO_ID"
+                    title="Navigation Tutorial"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-description">
+                  <h4>Navigation Tutorial</h4>
+                  <p>
+                    Learn how to navigate using MyPath's barrier-aware routing
+                    system and voice guidance features.
+                  </p>
+                </div>
+              </div>
 
+              <div class="video-grid-item">
+                <div class="video-thumbnail">
+                  <iframe
+                    width="300"
+                    height="200"
+                    src="https://www.youtube.com/embed/DATA_COLLECTION_VIDEO_ID"
+                    title="Data Collection Tutorial"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-description">
+                  <h4>Data Collection Tutorial</h4>
+                  <p>
+                    Discover how to contribute valuable accessibility data
+                    during your daily activities using the MyPath app.
+                  </p>
+                </div>
+              </div>
 
-							<!-- Menu -->
-                            <nav id="menu">
-                                <header class="major">
-                                    <h2>Menu</h2>
-                                </header>
-                                <ul>
-                                    <li><a href="index.html">Homepage</a></li>
-                                    <li><a href="about.html">Our Vision</a></li>
-                                    <li><a href="details.html">More about MyPath</a></li>
-                                    <li><a href="signup.html">Sign up</a></li>
-                                    <li><a href="team.html">Meet the Team</a></li>
-                                    <li><a href="publications.html">Publications</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="collab.html">Collaborators</a></li>
-                                    <li><a href="elements.html">elements</a></li>
-                                    <li>
-                                        <span class="opener">Download the App</span>
-                                        <ul>
-                                            <li><a href="https://drive.google.com/file/d/1xEj4udqXTOIdNP2VVLw5Seh6VQu7F01y/view?usp=sharing">Android</a></li>
-                                            <li><a href="https://testflight.apple.com/join/f0qJoz6z">iOS</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
+              <div class="video-grid-item">
+                <div class="video-thumbnail">
+                  <iframe
+                    width="300"
+                    height="200"
+                    src="https://www.youtube.com/embed/BARRIER_REPORT_VIDEO_ID"
+                    title="Barrier Report Tutorial"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-description">
+                  <h4>Barrier Report Tutorial</h4>
+                  <p>
+                    Learn how to report accessibility barriers and help improve
+                    navigation for the wheelchair community.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>If you have any questions, we are happy to help you.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">mypath@miamioh.edu</a></li>
-										<li class="icon solid fa-phone">(513) 529-0845</li>
-									</ul>
-								</section>
+      <!-- Sign Up for Study Section -->
+      <section class="signup-study" id="signup-study">
+        <div class="container">
+          <div class="page-header">
+            <h1 class="page-title">How do I sign up?</h1>
+            <p class="page-subtitle">
+              Please check if you are eligible to participate in our research
+              study.
+            </p>
+          </div>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; MyPath. All rights reserved.</p>
-								</footer>
+          <div class="eligibility-container">
+            <div class="participation-steps">
+              <h2>What do I have to do?</h2>
+              <p class="steps-intro">
+                If you are eligible to be a participant, you will be taking the
+                following steps:
+              </p>
 
-						</div>
-					</div>
+              <div class="steps-list">
+                <div class="step-item">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h3>Complete the necessary surveys</h3>
+                    <p>
+                      Fill out initial questionnaires about your mobility needs
+                      and navigation challenges.
+                    </p>
+                  </div>
+                </div>
 
-			</div>
+                <div class="step-item">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h3>Download our MyPath App on your smartphone</h3>
+                    <p>
+                      Install the MyPath mobile application on your Android or
+                      iOS device.
+                    </p>
+                  </div>
+                </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <div class="step-item">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h3>Contribute data during daily activities</h3>
+                    <p>
+                      Use our app during outdoor, wheeled mobile activities to
+                      help improve navigation technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-	</body>
+            <div class="eligibility-checklist">
+              <h2>Eligibility Requirements</h2>
+              <div class="checklist-items">
+                <div class="checklist-item">
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" id="age-check" />
+                    <label for="age-check">I am 18 years or older</label>
+                  </div>
+                </div>
+                <div class="checklist-item">
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" id="wheelchair-check" />
+                    <label for="wheelchair-check"
+                      >I am an independent wheelchair user</label
+                    >
+                  </div>
+                </div>
+                <div class="checklist-item">
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" id="smartphone-check" />
+                    <label for="smartphone-check"
+                      >I carry an Android or iOS (Apple) smartphone</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="signup-action">
+                <p class="signup-instruction">
+                  Check all boxes to proceed with signing up for the study.
+                </p>
+                <a
+                  href="https://miamioh.qualtrics.com/jfe/form/SV_25oZUcwN96N2RPo"
+                  class="btn btn-primary signup-btn"
+                  id="signupButton"
+                >
+                  Click Here!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Research Papers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15</div>
+              <div class="stat-label">Team Members</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Conferences</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">7</div>
+              <div class="stat-label">Years of Research</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3 class="footer-title">MyPath</h3>
+            <p>
+              Advancing wheelchair accessibility through innovative AI research
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="conferences.html">Conferences</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div>
+              <p>mypath@miamioh.edu</p>
+              <p>+1 (513) 529-0845</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 MyPath. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Signup form checkbox validation
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkboxes = document.querySelectorAll(
+          '#signup-study input[type="checkbox"]'
+        );
+        const signupButton = document.getElementById("signupButton");
+
+        function updateSignupButton() {
+          const allChecked = Array.from(checkboxes).every(
+            (checkbox) => checkbox.checked
+          );
+          signupButton.disabled = !allChecked;
+        }
+
+        // Initially disable the button
+        updateSignupButton();
+
+        // Add event listeners to checkboxes
+        checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", updateSignupButton);
+        });
+      });
+    </script>
+  </body>
 </html>
