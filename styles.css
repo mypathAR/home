@@ -683,65 +683,153 @@ body {
 }
 
 /* ─── Conferences / Gallery ──────────────────────────────────────────────────── */
+/* ─── Gallery Hero ───────────────────────────────────────────────────────────── */
+.gallery-hero {
+    text-align: center;
+    padding: 56px 24px 48px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+}
+
+.gallery-hero .page-title {
+    margin-bottom: 14px;
+}
+
+/* ─── Conferences Grid ───────────────────────────────────────────────────────── */
 .conferences-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
+    gap: 28px;
+    margin-bottom: 56px;
 }
 
 .conference-card {
     overflow: hidden;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.conference-card:hover { border-color: #cbd5e1; }
+.conference-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.conference-card--award {
+    border-top: 3px solid var(--accent);
+}
 
 .conference-image {
     width: 100%;
-    height: 180px;
+    height: 220px;
     overflow: hidden;
     background: var(--bg);
+    position: relative;
 }
 
 .conference-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
-.conference-card:hover .conference-image img { transform: scale(1.03); }
+.conference-card:hover .conference-image img { transform: scale(1.05); }
 
-.conference-info { padding: 20px 24px 24px; }
+.conference-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--navy);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.conference-info {
+    padding: 22px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
 .conference-info h3 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     color: var(--navy);
+}
+
+.gallery-event-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .conference-location {
     color: var(--muted);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
 }
 
 .conference-description {
     color: #475569;
-    line-height: 1.65;
-    margin-bottom: 14px;
+    line-height: 1.7;
+    margin-bottom: 16px;
     font-size: 0.9rem;
+    flex: 1;
 }
 
 .conference-tags {
     display: flex;
     gap: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     flex-wrap: wrap;
+}
+
+.conference-info .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border: 1.5px solid var(--border);
+    color: var(--text);
+    background: var(--white);
+    transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+    margin-top: auto;
+}
+
+.conference-info .btn::after {
+    content: '→';
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+
+.conference-info .btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(173, 16, 42, 0.25);
+}
+
+.conference-info .btn:hover::after {
+    transform: translateX(3px);
 }
 
 .conference-stats { margin-top: 40px; text-align: center; }
@@ -1531,6 +1619,156 @@ body {
     height: auto;
     display: block;
     border-radius: 10px;
+}
+
+/* ─── Blind Person Indoor Navigation ─────────────────────────────────────── */
+.blind-navigation {
+    padding: 72px 0;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.blind-navigation-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 32px;
+}
+
+/* Make the section title and prototype/video card headings red */
+.blind-navigation-header .section-title {
+    color: #b91c1c;
+}
+
+.blind-navigation-video-card h3,
+.blind-navigation-card h3 {
+    color: #b91c1c;
+}
+
+
+
+.blind-navigation-summary {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.blind-navigation-videos {
+    margin-bottom: 32px;
+}
+
+.blind-navigation-video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.blind-navigation-video-card {
+    margin-bottom: 0;
+}
+
+.blind-navigation-video-preview {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.blind-navigation-video-thumb {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #0f172a;
+}
+
+.blind-navigation-video-play {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    background: rgba(15, 23, 42, 0.88);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.blind-navigation-video-preview:hover .blind-navigation-video-thumb {
+    border-color: #94a3b8;
+}
+
+.video-embed {
+    position: relative;
+    padding-top: 56.25%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #0f172a;
+    margin-bottom: 16px;
+}
+
+.blind-navigation-video-placeholder {
+    border-style: dashed;
+}
+
+.blind-navigation-video-placeholder h3 {
+    font-size: 1.15rem;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.blind-navigation-video-placeholder p,
+.blind-navigation-video-card p {
+    color: #475569;
+    line-height: 1.75;
+}
+
+.blind-navigation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.blind-navigation-card {
+    margin-bottom: 0;
+}
+
+.blind-navigation-card--full {
+    grid-column: 1 / -1;
+}
+
+.blind-navigation-card h3 {
+    font-size: 1.15rem;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.blind-navigation-card p {
+    color: #475569;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.blind-navigation-list {
+    padding-left: 18px;
+    color: #475569;
+    display: grid;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .blind-navigation-video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-embed--short {
+        padding-top: 56.25%;
+    }
+
+    .blind-navigation-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .our-app-screenshots { width: 100%; }
