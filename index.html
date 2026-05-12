@@ -3,43 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyPath Research Lab</title>
+    <title>MyPath Research: Accessible Navigation for Wheelchair Users</title>
     <meta
       name="description"
-      content="MyPath is a project focused on accessible navigation for wheelchair users. Discover our innovative research, publications, and accessible routing app."
+      content="MyPath develops AI-powered, barrier-aware navigation for wheelchair and BLV users. Download AccessMyPath for personalized accessible routes using crowdsourced surface data and machine learning."
     />
     <meta
       name="keywords"
-      content="AI, accessibility, wheelchair, navigation, research, accessible routes, geospatial data, machine learning, MyPath, barrier-aware, inclusive technology, mobile app, crowdsource, surface classification"
+      content="accessible navigation, wheelchair routing, barrier-aware navigation, AccessMyPath app, BLV indoor navigation, mmWave sensing, AI accessibility research, crowdsourced surface data, geospatial accessibility, MyPath, Miami University, NIDILRR, surface classification, mobile accessibility app"
     />
-    <meta name="author" content="MyPath Research" />
+    <meta name="author" content="MyPath Research, Miami University" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="geo.region" content="US-OH" />
+    <meta name="geo.placename" content="Oxford, Ohio" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="MyPath Research" />
+    <meta property="og:locale" content="en_US" />
     <meta
       property="og:title"
-      content="MyPath Research | AI-Powered Accessible Navigation"
+      content="MyPath Research: AI-Powered Accessible Navigation for Wheelchair Users"
     />
     <meta
       property="og:description"
-      content="Advancing wheelchair accessibility through innovative AI research and personalized, barrier-aware navigation solutions."
+      content="MyPath develops barrier-aware navigation for wheelchair and blind/low-vision users. Download the AccessMyPath app for personalized, accessible routes using crowdsourced surface data."
     />
     <meta
       property="og:image"
       content="https://mypathar.github.io/pictures/mypath-logo.png"
     />
+    <meta property="og:image:alt" content="MyPath Research Lab logo" />
     <meta property="og:url" content="https://mypathar.github.io/" />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MyPath Research Lab" />
+    <meta
+      name="twitter:title"
+      content="MyPath Research: AI Accessible Navigation for Wheelchair Users"
+    />
     <meta
       name="twitter:description"
-      content="AI-powered accessible navigation for wheelchair users. Learn about our research and app."
+      content="Barrier-aware navigation for wheelchair and BLV users. Personalized routes powered by crowdsourced surface data and machine learning."
     />
     <meta
       name="twitter:image"
       content="https://mypathar.github.io/pictures/mypath-logo.png"
     />
+    <meta name="twitter:image:alt" content="MyPath Research Lab logo" />
+
     <link rel="canonical" href="https://mypathar.github.io/" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="icon" type="image/png" href="pictures/mypath-logo.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -52,19 +70,30 @@
             "@type": "WebSite",
             "@id": "https://mypathar.github.io/#website",
             "url": "https://mypathar.github.io/",
-            "name": "MyPath Research Lab",
-            "description": "AI-powered accessible navigation for wheelchair users"
+            "name": "MyPath Research",
+            "description": "AI-powered accessible navigation research for wheelchair and blind/low-vision users",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://mypathar.github.io/publications.html?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
           },
           {
-            "@type": "ResearchProject",
+            "@type": ["Organization", "ResearchOrganization"],
             "@id": "https://mypathar.github.io/#organization",
-            "name": "MyPath",
+            "name": "MyPath Research",
+            "alternateName": "MyPath",
             "url": "https://mypathar.github.io/",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://mypathar.github.io/pictures/mypath-logo.png"
+              "url": "https://mypathar.github.io/pictures/mypath-logo.png",
+              "width": 512,
+              "height": 512
             },
-            "description": "AI-powered accessible navigation system providing personalized, barrier-aware routes for wheelchair users using geospatial data fusion and language models.",
+            "description": "MyPath is an AI research project developing personalized, barrier-aware navigation for wheelchair users and blind/low-vision individuals using geospatial data fusion, crowdsourced surface classification, and language models.",
             "email": "mypath@miamioh.edu",
             "telephone": "+1-513-529-0845",
             "address": {
@@ -75,7 +104,12 @@
               "postalCode": "45056",
               "addressCountry": "US"
             },
-            "memberOf": [
+            "parentOrganization": {
+              "@type": "CollegeOrUniversity",
+              "name": "Miami University",
+              "url": "https://www.miamioh.edu/"
+            },
+            "member": [
               { "@type": "CollegeOrUniversity", "name": "Miami University" },
               {
                 "@type": "CollegeOrUniversity",
@@ -88,7 +122,35 @@
             ],
             "funder": {
               "@type": "GovernmentOrganization",
-              "name": "HHS/ACL/NIDILRR"
+              "name": "National Institute on Disability, Independent Living, and Rehabilitation Research (NIDILRR)",
+              "alternateName": "HHS/ACL/NIDILRR"
+            },
+            "knowsAbout": [
+              "wheelchair accessibility",
+              "accessible navigation",
+              "barrier-aware routing",
+              "machine learning",
+              "geospatial data",
+              "blind and low-vision navigation",
+              "mmWave sensing",
+              "crowdsourced surface classification"
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://mypathar.github.io/#app",
+            "name": "AccessMyPath",
+            "operatingSystem": "iOS, Android",
+            "applicationCategory": "NavigationApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "description": "Accessible navigation app for wheelchair users providing barrier-aware routes using crowdsourced surface vibration data and personalized accessibility preferences.",
+            "url": "https://apps.apple.com/us/app/accessmypath/id6483305224",
+            "author": {
+              "@id": "https://mypathar.github.io/#organization"
             }
           }
         ]
@@ -126,7 +188,7 @@
       <!-- Hero Section -->
       <section class="hero">
         <div class="hero-container">
-          <h1 class="hero-title">Access Anywhere, Together</h1>
+          <h1 class="hero-title">Accessible Navigation for Wheelchair Users, Powered by AI</h1>
           <p class="hero-subtitle">
             MyPath is an AI-powered accessible navigation system that provides
             personalized, barrier-aware routes for wheelchair users using
@@ -186,7 +248,7 @@
 
               <img
                 src="pictures/motivation.png"
-                alt="Research Motivation"
+                alt="Diagram showing MyPath's vision: customized accessible routes avoiding barriers like curbs and terrain hazards for wheelchair users"
                 class="rounded-corner"
                 style="max-width: 100%; margin: 2rem 0"
               />
@@ -208,7 +270,7 @@
               </p>
               <img
                 src="pictures/mypath-sysarch.png"
-                alt="Research Motivation"
+                alt="MyPath system architecture: data collection, ML-based surface classification, and accessible route generation modules"
                 class="rounded-corner"
                 style="max-width: 100%; margin: 2rem 0"
               />
