@@ -1987,6 +1987,44 @@ body {
     border: 1px solid var(--border);
 }
 
+/* ─── Lightbox ──────────────────────────────────────────────────────────────── */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+.lightbox-overlay.active {
+    display: flex;
+}
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.6);
+    cursor: default;
+    object-fit: contain;
+}
+.lightbox-close {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    background: none;
+    border: none;
+    opacity: 0.75;
+    transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 1; }
+img.zoomable { cursor: zoom-in; }
+
 @media (max-width: 768px) {
     .previous-members-grid { grid-template-columns: 1fr; gap: 12px; }
     .previous-member-card  { padding: 16px; }

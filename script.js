@@ -189,6 +189,54 @@ function createBackToTopButton() {
 // Initialize back to top button
 document.addEventListener('DOMContentLoaded', createBackToTopButton);
 
+// Lightbox for zoomable images
+document.addEventListener('DOMContentLoaded', function () {
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.innerHTML =
+        '<button class="lightbox-close" aria-label="Close image">&times;</button>' +
+        '<img class="lightbox-img" src="" alt="" />';
+    document.body.appendChild(overlay);
+
+    const lightboxImg = overlay.querySelector('.lightbox-img');
+    const closeBtn = overlay.querySelector('.lightbox-close');
+
+    function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+    }
+
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        lightboxImg.src = '';
+    }
+
+    document.querySelectorAll('img.rounded-corner, img.screenshot-img').forEach(function (img) {
+        img.classList.add('zoomable');
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('role', 'button');
+        img.setAttribute('aria-label', 'Click to enlarge: ' + (img.alt || 'image'));
+        img.addEventListener('click', function () { openLightbox(img.src, img.alt); });
+        img.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') openLightbox(img.src, img.alt);
+        });
+    });
+
+    overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) closeLightbox();
+    });
+    closeBtn.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeLightbox();
+    });
+});
+
 // Sign up form handling
 document.addEventListener('DOMContentLoaded', function() {
     const signupForm = document.getElementById('signupForm');
