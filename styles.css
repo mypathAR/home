@@ -955,6 +955,56 @@ body {
 
 .rounded-corner { border-radius: 8px; border: 1px solid var(--border); }
 
+/* ─── Vision + Recent News Layout ────────────────────────────────────────────── */
+.vision-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 56px;
+}
+
+.vision-main .section-title {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.news-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    position: sticky;
+    top: 88px;
+}
+
+.news-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+}
+
+.news-item + .news-item {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.news-item-text {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text);
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .vision-layout { grid-template-columns: 1fr; gap: 32px; }
+    .vision-main .section-title { text-align: center; }
+    .news-card { position: static; }
+}
+
 /* ─── Team Section ───────────────────────────────────────────────────────────── */
 .team-section { margin-bottom: 56px; }
 
