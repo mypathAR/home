@@ -427,6 +427,7 @@ body {
 .badge-review      { background: #fef3c7; color: #92400e; }
 .badge-journal     { background: #f3e8ff; color: #7c3aed; }
 .badge-conference  { background: #ffedd5; color: #c2410c; }
+.badge-recruiting  { background: #cffafe; color: #0e7490; }
 
 /* ─── Page Layout ────────────────────────────────────────────────────────────── */
 .main-content {
@@ -934,8 +935,13 @@ body {
 /* ─── Research Description ───────────────────────────────────────────────────── */
 .research-description {
     max-width: 860px;
-    margin: 0 auto 56px;
+    margin: 0 0 56px;
     text-align: left;
+}
+
+.research-description .section-title {
+    text-align: left;
+    margin-bottom: 24px;
 }
 
 .research-intro,
@@ -999,10 +1005,19 @@ body {
     margin-top: 8px;
 }
 
+.news-item-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
 @media (max-width: 768px) {
     .vision-layout { grid-template-columns: 1fr; gap: 32px; }
     .vision-main .section-title { text-align: center; }
     .news-card { position: static; }
+    .research-description { margin-left: auto; margin-right: auto; }
+    .research-description .section-title { text-align: center; }
 }
 
 /* ─── Team Section ───────────────────────────────────────────────────────────── */
